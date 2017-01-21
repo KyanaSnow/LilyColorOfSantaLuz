@@ -1,0 +1,688 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ocean_material DEMO 1
+  m_Shader: {fileID: 4800000, guid: 3fef2c61a6f6b0349bd00c0cace9449e, type: 3}
+  m_ShaderKeywords: _INVERSEDIRECTION_ON _INVERSEWAVES_ON _RADIALWAVES_ON _USEDISPWAVES_ON
+    _USEFAKEREFLECTION_ON _USEMASK_ON _USERADIALMASK_ON _USEREFLECTION_ON
+  m_LightmapFlags: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Foam
+        second:
+          m_Texture: {fileID: 2800000, guid: 009fda13b82fc2d4bbd161e04c6c8dfe, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalTexture
+        second:
+          m_Texture: {fileID: 2800000, guid: 60977704998116b4dbd3350b7b9c4bae, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Displacement
+        second:
+          m_Texture: {fileID: 2800000, guid: 77631be9fde1502449409a785cd40831, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FoamTexture
+        second:
+          m_Texture: {fileID: 2800000, guid: 4569f84b7d2064c48ad37bc2748ca835, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WavesTexture
+        second:
+          m_Texture: {fileID: 2800000, guid: 1494fa713d330b84b9ce081df7b5c0c0, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskWavesDisplacement
+        second:
+          m_Texture: {fileID: 2800000, guid: 306f7b8087773cb42a665b9c5eeff8f1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaveA
+        second:
+          m_Texture: {fileID: 2800000, guid: a0c55168c4eb26646a6bd97b7c8e4da0, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaveB
+        second:
+          m_Texture: {fileID: 2800000, guid: a0c55168c4eb26646a6bd97b7c8e4da0, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DisplacementMask
+        second:
+          m_Texture: {fileID: 2800000, guid: 77631be9fde1502449409a785cd40831, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DisplacementWaves
+        second:
+          m_Texture: {fileID: 2800000, guid: 1494fa713d330b84b9ce081df7b5c0c0, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DisplacementWavesMask
+        second:
+          m_Texture: {fileID: 2800000, guid: 306f7b8087773cb42a665b9c5eeff8f1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaveMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_4966
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WavesMask
+        second:
+          m_Texture: {fileID: 2800000, guid: a4996dfd265554b40a7b0d1e42a4b937, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WavesDisplacement
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FakeReflection
+        second:
+          m_Texture: {fileID: 8900000, guid: cb6423272b9355b4daa2c58f3bd66a40, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_739
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_8476
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_1849
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_8717
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_905
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DisplacementTexture
+        second:
+          m_Texture: {fileID: 2800000, guid: 77631be9fde1502449409a785cd40831, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_8570
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_7674
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_3004
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_1274
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _ZWrite
+        second: 1
+      data:
+        first:
+          name: _Glossiness
+        second: .5
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _Parallax
+        second: .0199999996
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Fresnel
+        second: 0
+      data:
+        first:
+          name: _RefractionAmount
+        second: .578999996
+      data:
+        first:
+          name: _ShoreBlend
+        second: .150000006
+      data:
+        first:
+          name: _DepthBlend
+        second: .0410000011
+      data:
+        first:
+          name: _ShoreFoam
+        second: 1
+      data:
+        first:
+          name: _UseReflection
+        second: 1
+      data:
+        first:
+          name: _ReflectionFresnel
+        second: 4
+      data:
+        first:
+          name: _ReflectionIntensity
+        second: .768999994
+      data:
+        first:
+          name: _RefractionIntensity
+        second: .409999996
+      data:
+        first:
+          name: _NormalIntensity
+        second: .744000018
+      data:
+        first:
+          name: _WaterDensity
+        second: 6
+      data:
+        first:
+          name: _FadeLevel
+        second: 6
+      data:
+        first:
+          name: _ShoreWaterOpacity
+        second: .150000006
+      data:
+        first:
+          name: _ShoreLineOpacity
+        second: .25
+      data:
+        first:
+          name: _WavesScale
+        second: .115000002
+      data:
+        first:
+          name: _WavesSpeed
+        second: .643999994
+      data:
+        first:
+          name: _Specular
+        second: 5
+      data:
+        first:
+          name: _Gloss
+        second: .533999979
+      data:
+        first:
+          name: _DisplacementIntensity
+        second: .300000012
+      data:
+        first:
+          name: _DisplacementScale
+        second: .191
+      data:
+        first:
+          name: _DisplacementSpeed
+        second: .32100001
+      data:
+        first:
+          name: _ShoreFoamDistance
+        second: .699999988
+      data:
+        first:
+          name: _FoamScale
+        second: 1.21000004
+      data:
+        first:
+          name: _FoamSpeed
+        second: 2.20000005
+      data:
+        first:
+          name: _ShoreFoamIntensity
+        second: 2
+      data:
+        first:
+          name: _DisplacementFoamIntensity
+        second: .0500000007
+      data:
+        first:
+          name: _WavesDisplacementFoamIntensity
+        second: .100000001
+      data:
+        first:
+          name: _RadialWaves
+        second: 1
+      data:
+        first:
+          name: _UseMask
+        second: 1
+      data:
+        first:
+          name: _InverseDirection
+        second: 1
+      data:
+        first:
+          name: _WavesAmount
+        second: .050999999
+      data:
+        first:
+          name: _WavesDisplacementSpeed
+        second: 3.25999999
+      data:
+        first:
+          name: _WavesIntensity
+        second: .5
+      data:
+        first:
+          name: _TessellationLevel
+        second: 8
+      data:
+        first:
+          name: _FoamIntensity
+        second: 1
+      data:
+        first:
+          name: _ColorIntensity
+        second: 0
+      data:
+        first:
+          name: _WaveSpeed
+        second: .204999998
+      data:
+        first:
+          name: _OverallOpacity
+        second: .949999988
+      data:
+        first:
+          name: _WaveScale
+        second: 64
+      data:
+        first:
+          name: _WavesFresnel
+        second: .685000002
+      data:
+        first:
+          name: _FoamDistance
+        second: .175999999
+      data:
+        first:
+          name: _WavesFoam
+        second: .100000001
+      data:
+        first:
+          name: _FoamShore
+        second: .0199999996
+      data:
+        first:
+          name: _ReflectionDistortion
+        second: 0
+      data:
+        first:
+          name: _DisplacementPower
+        second: 1
+      data:
+        first:
+          name: _DisplacementDirection
+        second: .5
+      data:
+        first:
+          name: _UseDispWaves
+        second: 1
+      data:
+        first:
+          name: _UseRadialMask
+        second: 1
+      data:
+        first:
+          name: _DispMaskIntensity
+        second: .888000011
+      data:
+        first:
+          name: _InverseWaves
+        second: 1
+      data:
+        first:
+          name: _DispWavesAmount
+        second: .0419999994
+      data:
+        first:
+          name: _DispWavesSpeed
+        second: .316000015
+      data:
+        first:
+          name: _DispWavesIntensity
+        second: .122000001
+      data:
+        first:
+          name: _DispWavesFoamIntensity
+        second: .275000006
+      data:
+        first:
+          name: _ShowWaves
+        second: 0
+      data:
+        first:
+          name: _TesselationLevel
+        second: 8
+      data:
+        first:
+          name: _RefractionDistortion
+        second: 0
+      data:
+        first:
+          name: _WaveScaleA
+        second: 0
+      data:
+        first:
+          name: _WaveScaleB
+        second: 0
+      data:
+        first:
+          name: _Opacity
+        second: .74000001
+      data:
+        first:
+          name: _FoamDepth
+        second: 0
+      data:
+        first:
+          name: _WaveFoam
+        second: 1
+      data:
+        first:
+          name: _UseDisplacement
+        second: 1
+      data:
+        first:
+          name: _MaskedWaves
+        second: -.0312102009
+      data:
+        first:
+          name: _DX11Displacement
+        second: 0
+      data:
+        first:
+          name: _DisplacementFrecuency
+        second: .67870909
+      data:
+        first:
+          name: _MaskPower
+        second: .924651921
+      data:
+        first:
+          name: _MaskRotation
+        second: 0
+      data:
+        first:
+          name: _node_7333
+        second: 0
+      data:
+        first:
+          name: _DisplacementSize
+        second: .0299999993
+      data:
+        first:
+          name: _FoamSize
+        second: .349999994
+      data:
+        first:
+          name: _FresnelSaturation
+        second: 1
+      data:
+        first:
+          name: _ScaleFade
+        second: .109999999
+      data:
+        first:
+          name: _FoamDisntance
+        second: .0399999991
+      data:
+        first:
+          name: _MaskScale
+        second: .230000004
+      data:
+        first:
+          name: _MaskSpeed
+        second: 1
+      data:
+        first:
+          name: _UseAdditionalWaves
+        second: 0
+      data:
+        first:
+          name: _RefractionPower
+        second: 0
+      data:
+        first:
+          name: _BeachOpacity
+        second: .600000024
+      data:
+        first:
+          name: _Shoreopacity
+        second: 15
+      data:
+        first:
+          name: _ShoreOpacity
+        second: .0500000007
+      data:
+        first:
+          name: _UseFakeReflection
+        second: 1
+      data:
+        first:
+          name: _foamIntensity
+        second: 1
+      data:
+        first:
+          name: _MaskIntensity
+        second: .177000001
+      data:
+        first:
+          name: _DisplacementWavesSpeed
+        second: 1.90999997
+      data:
+        first:
+          name: _AmbientLightContribution
+        second: .00999999978
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ReflectionColor
+        second: {r: .68360728, g: .796885908, b: .852941155, a: 1}
+      data:
+        first:
+          name: _ShallowColor
+        second: {r: 0, g: .479320645, b: .500011325, a: .477999985}
+      data:
+        first:
+          name: _DeepColor
+        second: {r: 0, g: .183823526, b: .176217183, a: 1}
+      data:
+        first:
+          name: _WaterColor
+        second: {r: 0, g: .460199207, b: .551475942, a: 1}
